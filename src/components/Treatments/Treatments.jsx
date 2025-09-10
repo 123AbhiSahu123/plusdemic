@@ -4,7 +4,7 @@ import Icon2 from "../../assets/icon2.png";
 import { motion } from "framer-motion";
 import { SlideUp } from "../../utility/animation";
 
-const Trust = () => {
+const Treatments = () => {
   return (
     <section className="bg-brandWhite py-16 mt-20">
       <div className="container">
@@ -57,4 +57,4 @@ const Trust = () => {
   );
 };
 
-export default Trust;
+export default Treatments;

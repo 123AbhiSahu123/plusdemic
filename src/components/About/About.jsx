@@ -1,6 +1,6 @@
 import React from "react";
 
-const card = ({ icon, heading, text }) => {
+const About = ({ icon, heading, text }) => {
   return (
     <div className="p-6 bg-white rounded-xl border-[1px] border-gray-2200 text-center py-12">
       <div className="bg-brandWhite p-4 rounded-full w-fit mx-auto">
@@ -12,4 +12,4 @@ const card = ({ icon, heading, text }) => {
   );
 };
 
-export default card;
+export default About;

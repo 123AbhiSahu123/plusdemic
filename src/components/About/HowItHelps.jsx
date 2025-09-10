@@ -1,10 +1,10 @@
 import React from "react";
-import Card from "./CardComp.jsx";
+import Card from "./About.jsx";
 import Icon1 from "../../assets/icon/1.png";
 import Icon2 from "../../assets/icon/2.png";
 import Icon3 from "../../assets/icon/3.png";
 import { motion } from "framer-motion";
-import { SlideLeft, SlideRight } from "../../utility/animation";
+import { SlideLeft, SlideRight } from "../../utility/animation.js";
 
 const HowItHelps = () => {
   return (

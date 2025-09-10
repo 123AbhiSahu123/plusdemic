@@ -5,7 +5,7 @@ import Img3 from "../../assets/uses/3.png";
 import { motion } from "framer-motion";
 import { SlideLeft, SlideRight } from "../../utility/animation";
 
-const Uses = () => {
+const Services = () => {
   return (
     <section>
       <div className="container my-14">
@@ -64,4 +64,4 @@ const Uses = () => {
   );
 };
 
-export default Uses;
+export default Services;
