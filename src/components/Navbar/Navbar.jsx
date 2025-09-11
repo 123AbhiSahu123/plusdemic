@@ -37,14 +37,15 @@ const Navbar = () => {
               <NavLink
                 to={link.path}
                 className={({ isActive }) =>
-                  `transition-colors duration-300 hover:text-blue-600 ${isActive
-                    ? "text-blue-600 border-b-2 border-blue-600 pb-1"
-                    : "text-gray-700"
+                  `px-4 py-2 rounded-lg transition-colors duration-300 ${isActive
+                    ? "bg-blue-600 text-white font-semibold"
+                    : "text-gray-700 hover:bg-blue-100 hover:text-blue-600"
                   }`
                 }
               >
                 {link.name}
               </NavLink>
+
             </li>
           ))}
         </ul>

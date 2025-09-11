@@ -1,13 +1,14 @@
 import React from "react";
-
+import pic from "../../assets/image/pic.jpg"
+import pic1 from "../../assets/image/pic1.jpg"
+import pic2 from "../../assets/image/pic2.jpg"
 const Hospitals = () => {
   const hospitals = [
     {
       id: 1,
       name: "AIIMS Delhi",
       location: "New Delhi",
-      image:
-        "./public/pic2.jpg",
+      image:pic2,
       desc: "Leading government hospital with advanced medical facilities.",
     },
     {
@@ -22,16 +23,14 @@ const Hospitals = () => {
       id: 3,
       name: "Fortis Hospital",
       location: "Gurgaon",
-      image:
-        "./public/pic1.jpg",
+      image:pic1,
       desc: "Multi-specialty hospital known for quality healthcare.",
     },
     {
       id: 4,
       name: "Narayana Health",
       location: "Bangalore",
-      image:
-        "./public/pic.jpg",
+      image:pic,
       desc: "Affordable and quality treatment for all age groups.",
     },
   ];

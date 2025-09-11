@@ -1,41 +1,44 @@
 import React from "react";
+import doc from "../../assets/image/doc.jpg"
+import female from "../../assets/image/female.jpg"
+import male from "../../assets/image/male.jpg"
 
 const doctors = [
     {
         name: "Dr. Naresh Trehan",
         specialty: "Cardiac Surgery",
         hospital: "Medanta, Gurgaon",
-        image: "/public/doc.jpg",
+        image:doc,
     },
     {
         name: "Dr. Devi Shetty",
         specialty: "Cardiology",
         hospital: "Narayana Health, Bangalore",
-        image: "/public/female.jpg",
+        image: female,
     },
     {
         name: "Dr. Prathap C. Reddy",
         specialty: "Healthcare Leadership",
         hospital: "Apollo Hospitals",
-        image: "/public/male.jpg",
+        image: male,
     },
     {
         name: "Dr. Susmita S. Soin",
         specialty: "Liver Transplant",
         hospital: "Medanta, Gurgaon",
-        image: "/public/female.jpg",
+        image: female,
     },
     {
         name: "Dr. Subhash Gupta",
         specialty: "Hepato-Pancreato Surgery",
         hospital: "Max Healthcare, Delhi",
-        image: "/public/male.jpg",
+        image: male,
     },
     {
         name: "Dr. Abhishek Gupta",
         specialty: "Dentists",
         hospital: "Max Healthcare, Noida",
-        image: "/public/doc.jpg",
+        image: doc,
     },
 ];
 
