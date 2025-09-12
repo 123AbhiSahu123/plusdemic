@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Logo from "../../assets/logo.png";
+import Logo from "../../assets/image/health.jpg"
 import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react"; // for hamburger icons
 import { NavLink } from "react-router-dom";
@@ -22,12 +22,13 @@ const Navbar = () => {
       initial={{ opacity: 0, y: -50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
-      className="bg-white shadow-md sticky top-0 z-50"
+      // className="bg-white shadow-md sticky top-0 z-50"
+      className="sticky fixed-top-0 z-50 bg-white shadow-md"
     >
-      <div className="container mx-auto px-6 py-4 flex items-center justify-between">
+      <div className="container mx-auto px-6 py-6 flex gap-6 items-center justify-between">
         {/* Logo */}
         <div>
-          <img src={Logo} alt="PlusDemic Logo" className="w-40 md:w-48" />
+          <img src={Logo} alt="Health India" className="w-40 md:w-48" />
         </div>
 
         {/* Desktop Nav */}
