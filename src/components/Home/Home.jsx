@@ -3,6 +3,19 @@ import { FaHospital, FaUserMd, FaCalendarAlt, FaStethoscope, FaCheckSquare } fro
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa"; // icons
+import  pic1  from "../../assets/image/front1.png";
+import  pic2  from "../../assets/image/front2.png";
+import  pic3  from "../../assets/image/front3.png";
+import  pic4  from "../../assets/image/front4.png";
+import  pic5  from "../../assets/image/front5.png";
+import  pic6  from "../../assets/image/A.png";
+import  pic7  from "../../assets/image/B.png";
+import  pic8  from "../../assets/image/C.png";
+import  pic9  from "../../assets/image/D.png";
+import  pic10  from "../../assets/image/E.png";
+import  pic11  from "../../assets/image/F.png";
+import  pic12  from "../../assets/image/G.png";
+import  pic13  from "../../assets/image/H.png";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -15,33 +28,33 @@ const HomePage = () => {
       title: "Best Brain Cancer",
       subtitle: "Treatments in India",
       desc: "We Care you.",
-      img: "./src/assets/image/front1.png", // your uploaded doctor image
+      img: pic1, // your uploaded doctor image
     },
     {
       title: "World-Class",
       subtitle: "Medical Facilities",
       desc: "Get treatment from top hospitals in India.",
-      img: "./src/assets/image/front2.png",
+      img: pic2,
     },
     {
       title: "Trusted by Patients",
       subtitle: "Across the Globe",
       desc: "Safe, reliable, and affordable healthcare solutions.",
-      img: "./src/assets/image/front3.png",
+      img: pic3,
     },
   ];
 
 
-  const services = [
-    { title: "Atherectomy Surgery", img: "https://via.placeholder.com/400x250/cc0000/ffffff?text=Atherectomy" },
-    { title: "Hemangioblastoma", img: "https://via.placeholder.com/400x250/cc33cc/ffffff?text=Hemangioblastoma" },
-    { title: "Multiple Myeloma", img: "https://via.placeholder.com/400x250/ff9933/ffffff?text=Multiple+Myeloma" },
-    { title: "Astrocytoma Treatment", img: "https://via.placeholder.com/400x250/3333cc/ffffff?text=Astrocytoma" },
-    { title: "Neurology & Neurosurgery", img: "https://via.placeholder.com/400x250/3399ff/ffffff?text=Neurology" },
-    { title: "Orthopedics", img: "https://via.placeholder.com/400x250/9999cc/ffffff?text=Orthopedics" },
-    { title: "Hematology", img: "https://via.placeholder.com/400x250/990000/ffffff?text=Hematology" },
-    { title: "Cancer And Cancer Surgery", img: "https://via.placeholder.com/400x250/666666/ffffff?text=Cancer+Surgery" },
-  ];
+  // const services = [
+  //   { title: "Atherectomy Surgery", img: pic6 },
+  //   { title: "Hemangioblastoma", img: "https://via.placeholder.com/400x250/cc33cc/ffffff?text=Hemangioblastoma" },
+  //   { title: "Multiple Myeloma", img: "https://via.placeholder.com/400x250/ff9933/ffffff?text=Multiple+Myeloma" },
+  //   { title: "Astrocytoma Treatment", img: "https://via.placeholder.com/400x250/3333cc/ffffff?text=Astrocytoma" },
+  //   { title: "Neurology & Neurosurgery", img: "https://via.placeholder.com/400x250/3399ff/ffffff?text=Neurology" },
+  //   { title: "Orthopedics", img: "https://via.placeholder.com/400x250/9999cc/ffffff?text=Orthopedics" },
+  //   { title: "Hematology", img: "https://via.placeholder.com/400x250/990000/ffffff?text=Hematology" },
+  //   { title: "Cancer And Cancer Surgery", img: "https://via.placeholder.com/400x250/666666/ffffff?text=Cancer+Surgery" },
+  // ];
 
   const testimonials = [
     {
@@ -71,35 +84,35 @@ const HomePage = () => {
   const cards = [
     {
       title: "Atherectomy Surgery",
-      img: "./src/assets/image/A.png",
+      img: pic6,
     },
     {
       title: "Hemangioblastoma",
-      img: "./src/assets/image/B.png",
+      img: pic7,
     },
     {
       title: "Multiple Myeloma",
-      img: "./src/assets/image/C.png",
+      img: pic8,
     },
     {
       title: "Astrocytoma Treatment",
-      img: "./src/assets/image/D.png",
+      img: pic9,
     },
     {
       title: "Neurology & Neurosurgery",
-      img: "./src/assets/image/E.png",
+      img: pic10,
     },
     {
       title: "Orthopedics",
-      img: "./src/assets/image/F.png",
+      img: pic11,
     },
     {
       title: "Hematology",
-      img: "./src/assets/image/G.png",
+      img: pic12,
     },
     {
       title: "Cancer And Cancer Surgery",
-      img: "./src/assets/image/H.png",
+      img: pic13,
     },
   ];
 
@@ -121,6 +134,9 @@ const HomePage = () => {
           shadow-md absolute right-4 top-1/2 -translate-y-1/2 z-20 cursor-pointer">
           <FaChevronRight size={16} />
         </div>
+
+
+
 
         <Swiper
           modules={[Navigation, Pagination, Autoplay]}
@@ -253,7 +269,7 @@ const HomePage = () => {
           {/* Right: Illustration */}
           <div className="md:w-1/2">
             <img
-              src="./src/assets/image/front4.png"
+              src={pic4}
               alt="Doctor and Patient Illustration"
               className="rounded-lg shadow-md w-full h-auto"
             />
@@ -284,7 +300,7 @@ const HomePage = () => {
           </div>
           <div className="flex justify-center">
             <img
-              src="./src/assets/image/front5.png"
+              src={pic5}
               alt="Doctor Consultation"
               className="w-full max-w-md"
             />
