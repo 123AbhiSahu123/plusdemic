@@ -1,34 +1,39 @@
 import React from "react";
-import { FaHospital, FaUserMd, FaCalendarAlt, FaStethoscope, FaCheckSquare } from "react-icons/fa";
+import {
+  FaHospital,
+  FaUserMd,
+  FaCalendarAlt,
+  FaStethoscope,
+  FaCheckSquare,
+  FaChevronLeft,
+  FaChevronRight,
+} from "react-icons/fa";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
-import { FaChevronLeft, FaChevronRight } from "react-icons/fa"; // icons
-import  pic1  from "../../assets/image/front1.png";
-import  pic2  from "../../assets/image/front2.png";
-import  pic3  from "../../assets/image/front3.png";
-import  pic4  from "../../assets/image/front4.png";
-import  pic5  from "../../assets/image/front5.png";
-import  pic6  from "../../assets/image/A.png";
-import  pic7  from "../../assets/image/B.png";
-import  pic8  from "../../assets/image/C.png";
-import  pic9  from "../../assets/image/D.png";
-import  pic10  from "../../assets/image/E.png";
-import  pic11  from "../../assets/image/F.png";
-import  pic12  from "../../assets/image/G.png";
-import  pic13  from "../../assets/image/H.png";
+import pic1 from "../../assets/image/front1.png";
+import pic2 from "../../assets/image/front2.png";
+import pic3 from "../../assets/image/front3.png";
+import pic4 from "../../assets/image/front4.png";
+import pic5 from "../../assets/image/front5.png";
+import pic6 from "../../assets/image/A.png";
+import pic7 from "../../assets/image/B.png";
+import pic8 from "../../assets/image/C.png";
+import pic9 from "../../assets/image/D.png";
+import pic10 from "../../assets/image/E.png";
+import pic11 from "../../assets/image/F.png";
+import pic12 from "../../assets/image/G.png";
+import pic13 from "../../assets/image/H.png";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-
-// ================= HOME PAGE =================
 const HomePage = () => {
   const slides = [
     {
       title: "Best Brain Cancer",
       subtitle: "Treatments in India",
-      desc: "We Care you.",
-      img: pic1, // your uploaded doctor image
+      desc: "We Care for you.",
+      img: pic1,
     },
     {
       title: "World-Class",
@@ -44,29 +49,17 @@ const HomePage = () => {
     },
   ];
 
-
-  // const services = [
-  //   { title: "Atherectomy Surgery", img: pic6 },
-  //   { title: "Hemangioblastoma", img: "https://via.placeholder.com/400x250/cc33cc/ffffff?text=Hemangioblastoma" },
-  //   { title: "Multiple Myeloma", img: "https://via.placeholder.com/400x250/ff9933/ffffff?text=Multiple+Myeloma" },
-  //   { title: "Astrocytoma Treatment", img: "https://via.placeholder.com/400x250/3333cc/ffffff?text=Astrocytoma" },
-  //   { title: "Neurology & Neurosurgery", img: "https://via.placeholder.com/400x250/3399ff/ffffff?text=Neurology" },
-  //   { title: "Orthopedics", img: "https://via.placeholder.com/400x250/9999cc/ffffff?text=Orthopedics" },
-  //   { title: "Hematology", img: "https://via.placeholder.com/400x250/990000/ffffff?text=Hematology" },
-  //   { title: "Cancer And Cancer Surgery", img: "https://via.placeholder.com/400x250/666666/ffffff?text=Cancer+Surgery" },
-  // ];
-
   const testimonials = [
     {
-      text: "Recently, my husband had kidney transplant surgery. I am extremely grateful to God for putting us in contact with IHA. Despite the difficulties involved, the procedure was completed successfully thanks to skillful hands. The doctors here are incredibly kind and helpful people. For caring for my husband, IHA and their medical staff have my husband’s lifelong gratitude.",
+      text: "Recently, my husband had kidney transplant surgery. Thanks to IHA and their medical staff, the procedure was successful. We are forever grateful.",
       name: "Lilian Jones",
     },
     {
-      text: "I had an excellent experience with IHA. They made the entire medical journey stress-free and guided me at every step. The doctors and staff were very professional and caring. I highly recommend them!",
+      text: "I had an excellent experience with IHA. They made my medical journey stress-free and guided me at every step.",
       name: "Rahul Mehta",
     },
     {
-      text: "Thanks to IHA, my father received world-class treatment at one of India’s top hospitals. The support and transparency throughout the process were exceptional.",
+      text: "Thanks to IHA, my father received world-class treatment. The support and transparency were exceptional.",
       name: "Sophia Brown",
     },
   ];
@@ -81,39 +74,16 @@ const HomePage = () => {
     "High Patient Satisfaction",
     "Safety and Compliance",
   ];
+
   const cards = [
-    {
-      title: "Atherectomy Surgery",
-      img: pic6,
-    },
-    {
-      title: "Hemangioblastoma",
-      img: pic7,
-    },
-    {
-      title: "Multiple Myeloma",
-      img: pic8,
-    },
-    {
-      title: "Astrocytoma Treatment",
-      img: pic9,
-    },
-    {
-      title: "Neurology & Neurosurgery",
-      img: pic10,
-    },
-    {
-      title: "Orthopedics",
-      img: pic11,
-    },
-    {
-      title: "Hematology",
-      img: pic12,
-    },
-    {
-      title: "Cancer And Cancer Surgery",
-      img: pic13,
-    },
+    { title: "Atherectomy Surgery", img: pic6 },
+    { title: "Hemangioblastoma", img: pic7 },
+    { title: "Multiple Myeloma", img: pic8 },
+    { title: "Astrocytoma Treatment", img: pic9 },
+    { title: "Neurology & Neurosurgery", img: pic10 },
+    { title: "Orthopedics", img: pic11 },
+    { title: "Hematology", img: pic12 },
+    { title: "Cancer & Cancer Surgery", img: pic13 },
   ];
 
   return (
@@ -121,53 +91,38 @@ const HomePage = () => {
       {/* ================= HERO CAROUSEL ================= */}
       <section className="w-full relative">
         {/* Custom Arrows */}
-        <div className="swiper-button-prev 
-          !text-gray-800 !bg-gray-200 hover:!bg-gray-300 
-          !rounded-full !w-9 !h-9 flex items-center justify-center 
-          shadow-md absolute left-4 top-1/2 -translate-y-1/2 z-20 cursor-pointer">
-          <FaChevronLeft size={16} />
+        <div className="swiper-button-prev !text-gray-800 !bg-white hover:!bg-gray-200 
+          !rounded-full !w-8 !h-8 flex items-center justify-center 
+          shadow-md absolute left-2 md:left-4 top-1/2 -translate-y-1/2 z-20 cursor-pointer">
+          <FaChevronLeft size={14} />
         </div>
 
-        <div className="swiper-button-next 
-          !text-gray-800 !bg-gray-200 hover:!bg-gray-300 
-          !rounded-full !w-9 !h-9 flex items-center justify-center 
-          shadow-md absolute right-4 top-1/2 -translate-y-1/2 z-20 cursor-pointer">
-          <FaChevronRight size={16} />
+        <div className="swiper-button-next !text-gray-800 !bg-white hover:!bg-gray-200 
+          !rounded-full !w-8 !h-8 flex items-center justify-center 
+          shadow-md absolute right-2 md:right-4 top-1/2 -translate-y-1/2 z-20 cursor-pointer">
+          <FaChevronRight size={14} />
         </div>
-
-
-
 
         <Swiper
           modules={[Navigation, Pagination, Autoplay]}
-          navigation={{
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          }}
+          navigation={{ nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" }}
           pagination={{ clickable: true }}
-          autoplay={{ delay: 5000, disableOnInteraction: false }}
+          autoplay={{ delay: 4000, disableOnInteraction: false }}
           loop
           className="w-full"
         >
           {slides.map((slide, i) => (
             <SwiperSlide key={i}>
-              <div className="relative min-h-screen bg-gray-50 overflow-hidden">
-                {/* Background Image */}
-                <img
-                  src={slide.img}
-                  alt="Doctor"
-                  className="absolute w-full h-full object-cover"
-                />
-
-                {/* Content */}
-                <div className="relative z-10 container mx-auto px-6 py-12 space-y-6">
-                  <h2 className="text-4xl md:text-5xl font-bold leading-snug">
+              <div className="relative h-[70vh] sm:h-[80vh] flex items-center">
+                <img src={slide.img} alt="Doctor" className="absolute w-full h-full object-cover" />
+                <div className="relative z-10 container mx-auto px-4 sm:px-6 md:px-10 text-center md:text-left">
+                  <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold leading-snug">
                     <span className="text-blue-600">{slide.title}</span>
                     <br />
                     <span>{slide.subtitle}</span>
                   </h2>
-                  <p className="text-gray-700 text-lg">{slide.desc}</p>
-                  <button className="bg-blue-600 text-white px-6 py-3 rounded shadow hover:bg-blue-700 transition">
+                  <p className="text-gray-700 text-sm sm:text-base md:text-lg mt-2">{slide.desc}</p>
+                  <button className="mt-4 bg-blue-600 text-white px-4 sm:px-6 py-2 sm:py-3 rounded shadow hover:bg-blue-700 transition">
                     Learn More →
                   </button>
                 </div>
@@ -177,27 +132,19 @@ const HomePage = () => {
         </Swiper>
       </section>
 
-
-
-
-      {/* ================= ICONS SECTION ================= */}
-      <section className="container mx-auto px-6 py-10 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-        <div className="flex flex-col items-center">
-          <FaStethoscope className="text-blue-600 text-5xl mb-3" />
-          <h3 className="text-lg font-semibold text-blue-700">Treatments</h3>
-        </div>
-        <div className="flex flex-col items-center">
-          <FaHospital className="text-red-600 text-5xl mb-3" />
-          <h3 className="text-lg font-semibold text-blue-700">Top Hospitals</h3>
-        </div>
-        <div className="flex flex-col items-center">
-          <FaUserMd className="text-green-600 text-5xl mb-3" />
-          <h3 className="text-lg font-semibold text-blue-700">Top Doctors</h3>
-        </div>
-        <div className="flex flex-col items-center">
-          <FaCalendarAlt className="text-pink-600 text-5xl mb-3" />
-          <h3 className="text-lg font-semibold text-blue-700">Request An Appointment</h3>
-        </div>
+      {/* ================= ICONS ================= */}
+      <section className="container mx-auto px-4 py-10 grid grid-cols-2 sm:grid-cols-4 gap-6 text-center">
+        {[
+          { icon: <FaStethoscope className="text-blue-600 text-4xl mb-3" />, label: "Treatments" },
+          { icon: <FaHospital className="text-red-600 text-4xl mb-3" />, label: "Top Hospitals" },
+          { icon: <FaUserMd className="text-green-600 text-4xl mb-3" />, label: "Top Doctors" },
+          { icon: <FaCalendarAlt className="text-pink-600 text-4xl mb-3" />, label: "Appointments" },
+        ].map((item, i) => (
+          <div key={i} className="flex flex-col items-center">
+            {item.icon}
+            <h3 className="text-sm sm:text-base font-semibold text-blue-700">{item.label}</h3>
+          </div>
+        ))}
       </section>
 
       {/* ================= WELCOME SECTION ================= */}
@@ -308,20 +255,18 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* ================= SERVICES ================= */}
 
-      <div className="container mx-auto px-6 py-12">
-        <h2 className="text-3xl font-bold text-center mb-8">Featured Services</h2>
+
+      {/* ================= SERVICES ================= */}
+      <div className="container mx-auto px-4 sm:px-6 py-12">
+        <h2 className="text-2xl sm:text-3xl font-bold text-center mb-8">Featured Services</h2>
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {cards.map((card, i) => (
-            <div
-              key={i}
-              className="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition-shadow"
-            >
-              <img src={card.img} alt={card.title} className="w-full h-48 object-cover" />
-              <div className="p-4 space-y-2">
-                <h3 className="text-lg font-semibold">{card.title}</h3>
-                <button className="mt-2 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700">
+            <div key={i} className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition">
+              <img src={card.img} alt={card.title} className="w-full h-40 sm:h-48 object-cover" />
+              <div className="p-4 text-center">
+                <h3 className="text-sm sm:text-lg font-semibold">{card.title}</h3>
+                <button className="mt-3 px-3 sm:px-4 py-1.5 sm:py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 text-sm">
                   Read More
                 </button>
               </div>
@@ -330,53 +275,31 @@ const HomePage = () => {
         </div>
       </div>
 
+      
+
       {/* ================= TESTIMONIALS ================= */}
 
       <section className="py-12 bg-white">
-        <div className="container mx-auto px-6">
-          <h2 className="text-2xl md:text-3xl font-bold text-center text-blue-900 mb-8">
+        <div className="container mx-auto px-4 sm:px-6">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-center text-blue-900 mb-8">
             What Our Clients Say
           </h2>
-
-          <div className="relative max-w-4xl mx-auto">
-            {/* Left Arrow */}
-            <div className="swiper-button-prev 
-            !text-gray-700 !bg-gray-200 hover:!bg-gray-300 
-            !rounded-full !w-8 !h-8 flex items-center justify-center 
-            shadow-md absolute -left-4 top-1/2 -translate-y-1/2 z-10 cursor-pointer">
-              <FaChevronLeft size={14} />
-            </div>
-
-            {/* Right Arrow */}
-            <div className="swiper-button-next 
-            !text-gray-700 !bg-gray-200 hover:!bg-gray-300 
-            !rounded-full !w-8 !h-8 flex items-center justify-center 
-            shadow-md absolute -right-4 top-1/2 -translate-y-1/2 z-10 cursor-pointer">
-              <FaChevronRight size={14} />
-            </div>
-
-            <Swiper
-              modules={[Navigation, Pagination, Autoplay]}
-              navigation={{
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-              }}
-              pagination={{ clickable: true }}
-              autoplay={{ delay: 5000, disableOnInteraction: false }}
-              loop
-              className="rounded-lg"
-            >
-              {testimonials.map((item, index) => (
-                <SwiperSlide key={index}>
-                  <div className="bg-gray-50 shadow-md rounded-lg p-8 text-center relative">
-                    <p className="text-gray-700 leading-relaxed mb-6">{item.text}</p>
-                    <div className="absolute -bottom-3 left-1/2 transform -translate-x-1/2 w-6 h-6 rotate-45 bg-gray-50"></div>
-                    <h4 className="mt-6 font-semibold text-gray-800">{item.name}</h4>
-                  </div>
-                </SwiperSlide>
-              ))}
-            </Swiper>
-          </div>
+          <Swiper
+            modules={[Pagination, Autoplay]}
+            pagination={{ clickable: true }}
+            autoplay={{ delay: 4000 }}
+            loop
+            className="max-w-xl mx-auto"
+          >
+            {testimonials.map((item, i) => (
+              <SwiperSlide key={i}>
+                <div className="bg-gray-50 shadow-md rounded-lg p-6 sm:p-8 text-center">
+                  <p className="text-gray-700 text-sm sm:text-base leading-relaxed mb-4">{item.text}</p>
+                  <h4 className="mt-4 font-semibold text-gray-800">{item.name}</h4>
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
       </section>
 
